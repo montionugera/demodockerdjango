@@ -18,8 +18,8 @@ deployment:
     branch: /.*/
     commands:
       - docker login -e $DOCKER_HUB_EMAIL -u $DOCKER_HUB_USER_ID -p $DOCKER_HUB_PWD
-      - docker tag demodockerapp_demodockerapp $DOCKER_HUB_USER_ID/dockerapp:$CIRCLE_SHA1
-      - docker tag demodockerapp_demodockerapp $DOCKER_HUB_USER_ID/dockerapp:latest
+      - docker tag demodockerdjango_dockerdjango $DOCKER_HUB_USER_ID/dockerdjango:$CIRCLE_SHA1
+      - docker tag demodockerdjango_dockerdjango $DOCKER_HUB_USER_ID/dockerdjango:latest
       - docker push $DOCKER_HUB_USER_ID/dockerdjango:$CIRCLE_SHA1
       - docker push $DOCKER_HUB_USER_ID/dockerdjango:latest
 
