@@ -22,3 +22,4 @@ deployment:
       - docker tag demodockerapp_demodockerapp $DOCKER_HUB_USER_ID/dockerapp:latest
       - docker push $DOCKER_HUB_USER_ID/dockerdjango:$CIRCLE_SHA1
       - docker push $DOCKER_HUB_USER_ID/dockerdjango:latest
+
